@@ -6,46 +6,7 @@
 <body>
   <div id="app">
     <img src="https://images.pexels.com/photos/6895072/pexels-photo-6895072.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
-    <h1>\{{ greeting }}</h1>
-    <ul>
-      <li>
-        To learn more about Vue,  visit
-        <a :href="docsURL" target="_blank">
-          \{{ humanizeURL(docsURL) }}
-        </a>
-      </li>
-      <li>
-        For live help with simple questions, check out
-        <a :href="discordURL" target="_blank">
-          the Discord chat
-        </a>
-      </li>
-      <li>
-        For more complex questions, post to
-        <a :href="forumURL" target="_blank">
-          the forum
-        </a>
-      </li>
-    </ul>
+    <h1>Sample Page</h1>
   </div>
-
-  <script>
-    var app = new Vue({
-      el: '#app',
-      data: {
-        greeting: 'こんにちは!さようなら！',
-        docsURL: 'http://vuejs.org/guide/',
-        discordURL: 'https://chat.vuejs.org',
-        forumURL: 'https://www.pref.chiba.lg.jp/'
-      },
-      methods: {
-        humanizeURL: function (url) {
-          return url
-            .replace(/^https?:\/\//, '')
-            .replace(/\/$/, '')
-        }
-      }
-    })
-  </script>
 </body>
 </html>
